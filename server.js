@@ -6,9 +6,13 @@ const webpack = require('webpack');
 const config = require('./webpack.config.js');
 const middleware = require('webpack-dev-middleware');
 
+// TODO: set this via command line argument
 const devServerEnabled = true;
 const url = 'http://www.anagramica.com/best/';
 
+
+// Use Webpack Dev Middleware to recompile svelte components
+// while server is running
 if (devServerEnabled) {
   const compiler = webpack(config);
 

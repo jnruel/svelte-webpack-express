@@ -14,7 +14,7 @@
       });
   }
 
-  // Post input to express server
+  // Post input to express server endpoint
   async function postVal(val) {
     let res = await fetch(
       '/word', {

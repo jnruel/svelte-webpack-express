@@ -1,5 +1,4 @@
 const path = require('path');
-// const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -8,9 +7,6 @@ module.exports = {
     bundle: ['./src/main.js']
   },
   output: {
-    // path: __dirname + '/public',
-    // filename: '[name].js',
-    // chunkFilename: '[name].[id].js',
     path: path.resolve(__dirname, 'public'),
     filename: 'app.js',
     publicPath: '/'
@@ -29,11 +25,7 @@ module.exports = {
         use: {
           loader: 'svelte-loader',
           options: {
-            // emitCss: true,
             hotReload: true
-            // preprocess: require('svelte-preprocess')([
-            // 	scss()
-            // ])
           }
         }
       }
