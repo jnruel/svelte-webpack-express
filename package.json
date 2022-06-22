@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "got": "^10.4.0",
+    "got": "^11.8.5",
     "svelte": "^3.18.1"
   },
   "devDependencies": {
